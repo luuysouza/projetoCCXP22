@@ -1,0 +1,86 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #FFD900;
+    height: 6.25rem;
+    margin-bottom: 0;
+}
+
+main{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+#logo{
+    margin-top: 20px;
+    margin-left: 90px;
+}
+
+#texto{
+    background-color: #514988;    
+    text-align: center;    
+    color: white;
+    max-width: 600px;
+}
+
+#texto h1{
+    color:#FFD900;
+    font-size: 45px;
+}
+
+#texto p{
+    font-size: 25px;
+    padding: 35px 50px 0px 50px;
+}
+
+#contador{
+    max-width: 800px;
+}
+
+#contador h2{
+    text-align: center;
+    color: #E33881;
+}
+
+.timer{
+    display: grid;
+    grid-auto-flow: column;
+    text-align: center;
+    font-size: 35px;
+    color: #514988;
+}
+
+.timer h1{
+    margin-bottom: 0;
+}
+
+footer{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+#ingressos h2{
+    color: #FFD900;
+    margin-left: 60px;
+}
+
+button{
+    color: white;
+    font-size: 35px;
+    width: 400px;
+    height: 120px;
+    background-color: #514988;
+    border: 0;
+    border-radius: 25px;
+    margin-top: 80px;
+}
+
+button:hover{
+    transition-duration: 0.1s;
+    cursor: pointer;
+    color: #FFD900;
+}
