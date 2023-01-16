@@ -54,16 +54,24 @@
     <footer>
         <div id="ingressos">
             <h2>AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</h2>
-            <img src="assets/quinta.svg">
-            <img src="assets/sexta.svg">
-            <img src="assets/sabado.svg">
-            <img src="assets/domingo.svg">
+            <img id="quinta" src="assets/quinta.svg" onmouseover="highlightCard('quinta')" onmouseout="highlightCard('quinta')" onclick="selectCard('#quinta')">
+            <img id="sexta" src="assets/sexta.svg" onmouseover="highlightCard('sexta')" onmouseout="highlightCard('sexta')" onclick="selectCard('#sexta')">
+            <img id="sabado" src="assets/sabado.svg" onmouseover="highlightCard('sabado')" onmouseout="highlightCard('sabado')" onclick="selectCard('#sabado')">
+            <img id="domingo" src="assets/domingo.svg" onmouseover="highlightCard('domingo')" onmouseout="highlightCard('domingo')" onclick="selectCard('#domingo')">
         </div>
         <div id="botao">
-            <button><strong>GARANTA O SEU!</strong></button>
+            <button onclick="showSelectedCards()"><strong>GARANTA O SEU!</strong></button>
         </div>
     </footer>
 
+    <div id="email">
+        <form action="https://www.google.com.br">
+            <input id="campo" type="email" placeholder="Seu email" required/>
+            <input type="submit" />
+        </form>
+    </div>
+
     <script src="script/scrpit.js"></script>
+    <script src="script/main.js"></script>
 </body>
 </html>
